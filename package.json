@@ -1,0 +1,25 @@
+{
+  "name": "whisperdb",
+  "version": "1.0.0",
+  "description": "Module to perform CRUD operations on Whisper, the RRD database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paritosh16/whisperdb.git"
+  },
+  "keywords": [
+    "whisper",
+    "database",
+    "db",
+    "CRUD"
+  ],
+  "author": "Paritosh Walvekar <paritosh.walvekar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paritosh16/whisperdb/issues"
+  },
+  "homepage": "https://github.com/paritosh16/whisperdb#readme"
+}
