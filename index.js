@@ -1,5 +1,5 @@
 var ps = require('child_process');
-var baseCommand = "sudo python bin/whisper-";
+var baseCommand = "sudo python node_modules/whisperdb/bin/whisper-";
 
 module.exports.create = function(absDir, name, pointPattern, callback){
 	var command = baseCommand + "create.py " + absDir + name + ".wsp " + pointPattern;
