@@ -1,11 +1,12 @@
 # whisperdb
 A npm module for performing CRUD operations on the Whisper rrd database.
 
-##Usage 
+Usage 
+
 whisperdb is easy to use:
 
 ```js
-var whisper = require('whisper');
+var whisper = require('whisperdb');
 
 //Creates a whisper file with the name at the path mentioned.
 
@@ -29,6 +30,11 @@ whisper.fill(srcPath, dstPath, function(){
 //Merge two separate whisper files.
 
 whisper.merge(fromPath, toPath, function(){
+	//callback routine
+});
+
+//Resize a whisper file to different point pattern.
+whisper.resize(absPath, pointPattern, function(){
 	//callback routine
 });
 ```
