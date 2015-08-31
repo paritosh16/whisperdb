@@ -34,7 +34,14 @@ whisper.merge(fromPath, toPath, function(){
 });
 
 //Resize a whisper file to different point pattern.
+
 whisper.resize(absPath, pointPattern, function(){
 	//callback routine
 });
+
+//Get complete info about a whisper file.
+
+whisper.info(absPath, fieldName, function(){
+	//callback routine
+})
 ```

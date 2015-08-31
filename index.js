@@ -39,9 +39,17 @@ module.exports.merge = function(fromPath, toPath, callback){
 }
 
 module.exports.resize = function(absPath, pointPattern, callback){
-	var command = baseCommand + "resize.py" + absPath + " " + pointPattern;
+	var command = baseCommand + "resize.py " + absPath + " " + pointPattern;
 	var cmd = ps.exec(command);
 	cmd.on('close', function(){
 		callback();
 	});
+}
+
+module.exports.info = function(absPath, fieldName, callback){
+	var command = baseCommand + "info.py " + absPath + " " + fieldName;
+	var cmd = ps.exec(command);
+	cmd.on('close', function(){
+		callback();
+	}); 
 }
