@@ -43,5 +43,10 @@ whisper.resize(absPath, pointPattern, function(){
 
 whisper.info(absPath, fieldName, function(){
 	//callback routine
-})
+});
+
+//Get the difference between two whisper files.
+whisper.diff(aPath, bPath, function(){
+	//callback routine
+});
 ```

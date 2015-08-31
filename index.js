@@ -53,3 +53,11 @@ module.exports.info = function(absPath, fieldName, callback){
 		callback();
 	}); 
 }
+
+module.exports.diff = function(aPath, bPath, callback){
+	var command = baseCommand + "diff.py " + aPath + " " + bPath;
+	var cmd = ps.exec(command);
+	cmd.on('close', function(){
+		callback();
+	});
+}
