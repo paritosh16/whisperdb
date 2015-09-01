@@ -46,7 +46,15 @@ whisper.info(absPath, fieldName, function(){
 });
 
 //Get the difference between two whisper files.
+
 whisper.diff(aPath, bPath, function(){
+	//callback routine
+});
+
+//Set the aggregation method for the whisper file.
+//Aggregation method should be <average|sum|last|max|min>
+
+whisper.setAggrMeth(absPath, aggrMethod, function(){
 	//callback routine
 });
 ```

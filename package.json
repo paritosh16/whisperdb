@@ -1,6 +1,6 @@
 {
   "name": "whisperdb",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Module to perform CRUD operations on Whisper, the RRD database.",
   "main": "index.js",
   "scripts": {

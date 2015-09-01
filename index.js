@@ -61,3 +61,11 @@ module.exports.diff = function(aPath, bPath, callback){
 		callback();
 	});
 }
+
+module.exports.setAggrMeth = function(absPath, aggrMethod, callback){
+	var command = baseCommand + "set-aggregation-method.py " + absPath + " " + aggrMethod;
+	var cmd = ps.exec(command);
+	cmd.on('close', function(){
+		callback();
+	}); 
+}
